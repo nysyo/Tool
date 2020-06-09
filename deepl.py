@@ -1,5 +1,5 @@
 import pyperclip
 import time
 while True:
-    pyperclip.copy(' '.join(pyperclip.paste().split('\r\n')))
+    pyperclip.copy(pyperclip.paste().replace('\r\n',' '))
     time.sleep(1)
